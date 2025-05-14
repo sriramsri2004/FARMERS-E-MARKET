@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .activity { fill: #fff; stroke: #333; stroke-width: 2; }
+      .decision { fill: #fff; stroke: #333; stroke-width: 2; }
+      .flow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
+      .text { font-family: Arial; font-size: 14px; fill: #333; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Start -->
+  <circle cx="400" cy="50" r="20" fill="#333"/>
+
+  <!-- Login -->
+  <path d="M400 70 L400 120" class="flow"/>
+  <rect x="300" y="120" width="200" height="40" rx="10" class="activity"/>
+  <text x="400" y="145" class="text">LOGIN</text>
+
+  <!-- Choose Role -->
+  <path d="M400 160 L400 210" class="flow"/>
+  <path d="M300 210 L500 210 L400 260 Z" class="decision"/>
+  <text x="400" y="240" class="text">CHOOSE ROLE</text>
+
+  <!-- Farmer Path -->
+  <path d="M300 210 L200 260" class="flow"/>
+  <rect x="100" y="260" width="200" height="40" rx="10" class="activity"/>
+  <text x="200" y="285" class="text">VIEW REALTIME PRICE</text>
+
+  <path d="M200 300 L200 350" class="flow"/>
+  <rect x="100" y="350" width="200" height="40" rx="10" class="activity"/>
+  <text x="200" y="375" class="text">ADD AGRICULTURE PRODUCE</text>
+
+  <!-- Buyer Path -->
+  <path d="M500 210 L600 260" class="flow"/>
+  <rect x="500" y="260" width="200" height="40" rx="10" class="activity"/>
+  <text x="600" y="285" class="text">VIEW REALTIME PRICE</text>
+
+  <path d="M600 300 L600 350" class="flow"/>
+  <rect x="500" y="350" width="200" height="40" rx="10" class="activity"/>
+  <text x="600" y="375" class="text">CHOOSE A AGRICULTURE PRODUCE</text>
+
+  <!-- Chat -->
+  <path d="M200 390 L400 440" class="flow"/>
+  <path d="M600 390 L400 440" class="flow"/>
+  <path d="M300 440 L500 440 L400 490 Z" class="decision"/>
+  <text x="400" y="470" class="text">CHAT</text>
+
+  <!-- Logout -->
+  <path d="M400 490 L400 540" class="flow"/>
+  <rect x="300" y="540" width="200" height="40" rx="10" class="activity"/>
+  <text x="400" y="565" class="text">LOGOUT</text>
+
+  <!-- End -->
+  <path d="M400 580 L400 630" class="flow"/>
+  <circle cx="400" cy="630" r="20" fill="#333" stroke="#333" stroke-width="4"/>
+  <circle cx="400" cy="630" r="15" fill="#fff"/>
+</svg>

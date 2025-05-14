@@ -1,0 +1,74 @@
+@startuml Agri-Pulse Activity Diagram
+
+' Define swimlanes
+partition "User" {
+}
+
+partition "Farmer" {
+}
+
+partition "System" {
+}
+
+' Authentication Workflow
+(*) --> "Login"
+if "Valid credentials?" then
+  -->[Yes] "Show Dashboard"
+  --> (*)
+else
+  -->[No] "Show Error"
+  --> "Login"
+endif
+
+' Product Management Workflow
+"Farmer" -> "Add Product": Enter product details
+if "Valid product data?" then
+  -->[Yes] "Add Product" -> "System": Save product
+  "System" -> "Validate Product": Check completeness
+  if "Validation passed?" then
+    -->[Yes] "System" -> "Show Confirmation": Product added
+  else
+    -->[No] "System" -> "Show Error": Invalid product data
+    --> "Add Product"
+  endif
+else
+  -->[No] "Show Error": Incomplete data
+  --> "Add Product"
+endif
+
+' Order Processing Workflow
+"User" -> "Browse Products": Select items
+"Browse Products" -> "Place Order": Confirm purchase
+"Place Order" -> "System": Process payment
+if "Payment successful?" then
+  -->[Yes] "System" -> "Farmer": Notify new order
+  "Farmer" -> "Update Status": Accept/Reject
+  if "Order accepted?" then
+    -->[Yes] "Update Status" -> "System": Confirm order
+    "System" -> "User": Order status update
+    "System" -> "Prepare Delivery": Schedule shipment
+  else
+    -->[No] "Update Status" -> "System": Reject order
+    "System" -> "User": Order cancellation
+    "System" -> "Process Refund": Initiate refund
+  endif
+else
+  -->[No] "Show Error": Payment failed
+  --> "Place Order"
+endif
+
+' Review System Workflow
+"User" -> "View Order History": Select completed order
+"View Order History" -> "Leave Review": Rate farmer
+"Leave Review" -> "System": Submit review
+"System" -> "Validate Review": Check authenticity
+if "Valid review?" then
+  -->[Yes] "System" -> "Save Review": Store rating
+  "System" -> "Update Farmer Rating": Recalculate average
+  "System" -> "Show Confirmation": Review submitted
+else
+  -->[No] "System" -> "Show Error": Invalid review
+  --> "Leave Review"
+endif
+
+@enduml

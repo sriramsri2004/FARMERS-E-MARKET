@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Actors -->
+  <!-- Farmer Actor -->
+  <g transform="translate(100,200)">
+    <circle cx="30" cy="30" r="20" stroke="black" fill="white"/>
+    <line x1="30" y1="50" x2="30" y2="100" stroke="black"/>
+    <line x1="0" y1="75" x2="60" y2="75" stroke="black"/>
+    <line x1="30" y1="100" x2="0" y2="130" stroke="black"/>
+    <line x1="30" y1="100" x2="60" y2="130" stroke="black"/>
+    <text x="0" y="160" text-anchor="middle">Farmer</text>
+  </g>
+
+  <!-- Buyer Actor -->
+  <g transform="translate(100,500)">
+    <circle cx="30" cy="30" r="20" stroke="black" fill="white"/>
+    <line x1="30" y1="50" x2="30" y2="100" stroke="black"/>
+    <line x1="0" y1="75" x2="60" y2="75" stroke="black"/>
+    <line x1="30" y1="100" x2="0" y2="130" stroke="black"/>
+    <line x1="30" y1="100" x2="60" y2="130" stroke="black"/>
+    <text x="0" y="160" text-anchor="middle">Buyer</text>
+  </g>
+
+  <!-- System Boundary -->
+  <rect x="200" y="50" width="800" height="1000" rx="10" ry="10" fill="none" stroke="black" stroke-dasharray="5,5"/>
+  <text x="600" y="80" text-anchor="middle" font-weight="bold">Agricultural E-Commerce System</text>
+
+  <!-- Use Cases -->
+  <!-- Authentication Use Cases -->
+  <ellipse cx="400" cy="150" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="155" text-anchor="middle">Register</text>
+
+  <ellipse cx="400" cy="230" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="235" text-anchor="middle">Login</text>
+
+  <!-- Farmer Use Cases -->
+  <ellipse cx="400" cy="310" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="315" text-anchor="middle">Manage Products</text>
+
+  <ellipse cx="600" cy="310" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="600" y="315" text-anchor="middle">Add Product</text>
+
+  <ellipse cx="800" cy="310" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="800" y="315" text-anchor="middle">Edit Product</text>
+
+  <ellipse cx="400" cy="390" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="395" text-anchor="middle">View Orders</text>
+
+  <!-- Buyer Use Cases -->
+  <ellipse cx="400" cy="470" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="475" text-anchor="middle">Browse Market</text>
+
+  <ellipse cx="400" cy="550" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="555" text-anchor="middle">Place Order</text>
+
+  <ellipse cx="400" cy="630" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="635" text-anchor="middle">View Prices</text>
+
+  <ellipse cx="400" cy="710" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="715" text-anchor="middle">Manage Favorites</text>
+
+  <!-- Common Use Cases -->
+  <ellipse cx="400" cy="790" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="795" text-anchor="middle">View Profile</text>
+
+  <ellipse cx="400" cy="870" rx="80" ry="30" fill="white" stroke="black"/>
+  <text x="400" y="875" text-anchor="middle">View Notifications</text>
+
+  <!-- Relationships -->
+  <!-- Farmer Relationships -->
+  <line x1="130" y1="230" x2="320" y2="150" stroke="black"/>
+  <line x1="130" y1="230" x2="320" y2="230" stroke="black"/>
+  <line x1="130" y1="230" x2="320" y2="310" stroke="black"/>
+  <line x1="130" y1="230" x2="320" y2="390" stroke="black"/>
+  <line x1="130" y1="230" x2="320" y2="790" stroke="black"/>
+  <line x1="130" y1="230" x2="320" y2="870" stroke="black"/>
+
+  <!-- Buyer Relationships -->
+  <line x1="130" y1="530" x2="320" y2="150" stroke="black"/>
+  <line x1="130" y1="530" x2="320" y2="230" stroke="black"/>
+  <line x1="130" y1="530" x2="320" y2="470" stroke="black"/>
+  <line x1="130" y1="530" x2="320" y2="550" stroke="black"/>
+  <line x1="130" y1="530" x2="320" y2="630" stroke="black"/>
+  <line x1="130" y1="530" x2="320" y2="710" stroke="black"/>
+  <line x1="130" y1="530" x2="320" y2="790" stroke="black"/>
+  <line x1="130" y1="530" x2="320" y2="870" stroke="black"/>
+
+  <!-- Include Relationships -->
+  <line x1="480" y1="310" x2="520" y2="310" stroke="black" stroke-dasharray="5,5"/>
+  <line x1="680" y1="310" x2="720" y2="310" stroke="black" stroke-dasharray="5,5"/>
+  <text x="500" y="300" font-size="12">«include»</text>
+  <text x="700" y="300" font-size="12">«include»</text>
+
+  <!-- System Name and Legend -->
+  <text x="600" y="1100" text-anchor="middle" font-size="20" font-weight="bold">Agricultural E-Commerce System - Use Case Diagram</text>
+  
+  <!-- Legend -->
+  <g transform="translate(200,1150)">
+    <text x="0" y="0" font-weight="bold">Legend:</text>
+    <line x1="0" y1="20" x2="50" y2="20" stroke="black"/>
+    <text x="60" y="25">Association</text>
+    <line x1="0" y1="40" x2="50" y2="40" stroke="black" stroke-dasharray="5,5"/>
+    <text x="60" y="45">Include Relationship</text>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+@startuml Agri-Pulse Core Class Diagram
+
+' Core Entities
+class User {
+  +id: UUID
+  +email: String
+  +name: String
+  +phone: String
+  +address: String
+}
+
+class Farmer {
+  +user_id: UUID
+  +farm_name: String
+  +farm_location: String
+  +rating: Float
+}
+
+class Product {
+  +id: UUID
+  +name: String
+  +description: Text
+  +price: Float
+  +quantity: Integer
+  +category: String
+}
+
+class Order {
+  +id: UUID
+  +total_amount: Float
+  +status: String
+  +created_at: Timestamp
+}
+
+' Relationships
+User <|-- Farmer
+User "1" -- "*" Order : places >
+Farmer "1" -- "*" Product : sells >
+Farmer "1" -- "*" Order : receives >
+Product "1" -- "*" Order : ordered_in >
+
+@enduml
