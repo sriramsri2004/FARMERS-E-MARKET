@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
       transition={{ duration: 0.5 }}
     >
       <nav className="w-full py-4 px-6 bg-white border-b border-gray-100 shadow-sm">
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container mt-3 mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center group">
             <motion.div 
               className="bg-farmer-700 text-white p-2 rounded-md mr-2"
