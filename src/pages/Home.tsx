@@ -6,14 +6,14 @@ import { ArrowRight } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-farmer-50">
+    <div className="mt-5 min-h-screen bg-farmer-50">
       {/* Hero Section */}
       <section className="relative py-16 md:py-32 bg-gradient-to-br from-farmer-50 to-farmer-100 overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Farm Fresh to <br />Local Market
+                Fearm Fresh to <br />Local Market
               </h1>
               <p className="text-lg md:text-xl text-gray-700 max-w-lg">
                 Connect directly with local farmers. Cut out the middleman. Support sustainable agriculture and get the freshest produce at the best prices.
