@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-farmer-50">
+    <div className="min-h-screen mt-5 bg-farmer-50">
       {/* Hero Section */}
       <section className="relative py-16 md:py-32 bg-gradient-to-br from-farmer-50 to-farmer-100 overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
