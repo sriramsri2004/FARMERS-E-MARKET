@@ -13,7 +13,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Fearm Fresh to <br />Local Market
+                Farm Fresh to <br />Local Market
               </h1>
               <p className="text-lg md:text-xl text-gray-700 max-w-lg">
                 Connect directly with local farmers. Cut out the middleman. Support sustainable agriculture and get the freshest produce at the best prices.
