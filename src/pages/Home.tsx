@@ -34,7 +34,7 @@ const Home: React.FC = () => {
             </div>
             <div className="relative h-64 md:h-96 lg:h-full rounded-2xl overflow-hidden shadow-2xl animate-scale-in">
               <img 
-                src="public/white" 
+                src="public/fdd9fc1a-daca-452f-902c-7a9b904d3379.png" 
                 alt="Farm landscape" 
                 className="w-full h-full object-cover rounded-2xl"
               />
