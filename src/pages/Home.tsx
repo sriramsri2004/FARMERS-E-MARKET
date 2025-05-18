@@ -33,12 +33,12 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className="relative h-50 md:h-96 lg:h-full rounded-3xl overflow-hidden shadow-2xl animate-scale-in transform hover:scale-105 transition-transform duration-500">
-              <img src="/lovable-uploads/banner.jpg" alt="Fresh vegetables collage" className="w-full h-200 object-cover rounded-3xl bg-gradient-to-br from-white to-farmer-50" />
+              <img src="/lovable-uploads/banner.jpg" alt="Fresh vegetables collage" className="w-full h-30 object-cover rounded-3xl bg-gradient-to-br from-white to-farmer-50" />
             </div>
           </div>
         </div>
         {/* Background pattern */}
-       <div className="absolute inset-0 opacity-43">
+       <div className="absolute inset-0 opacity-30">
           <img src="/lovable-uploads/bg.png" alt="Fresh vegetables collage" className="w-full h-full object-cover rounded-3xl bg-gradient-to-br from-white to-farmer-50" />
         </div>
       </section>
