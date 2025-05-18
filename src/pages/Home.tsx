@@ -38,15 +38,8 @@ const Home: React.FC = () => {
           </div>
         </div>
         {/* Background pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <svg width="100%" height="100%" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
+       <div className="absolute inset-0 opacity-40">
+          <img src="/lovable-uploads/bg.png" alt="Fresh vegetables collage" className="w-full h-full object-cover rounded-3xl bg-gradient-to-br from-white to-farmer-50" />
         </div>
       </section>
 
