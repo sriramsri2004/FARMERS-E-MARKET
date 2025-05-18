@@ -34,7 +34,7 @@ const Home: React.FC = () => {
             </div>
             <div className="relative h-64 md:h-96 lg:h-full rounded-2xl overflow-hidden shadow-2xl animate-scale-in">
               <img 
-                src="public/lovable-upload/banner.jpg" 
+                src="/lovable-upload/banner.jpg" 
                 alt="Farm " 
                 className="w-full h-full object-cover rounded-2xl"
               />
